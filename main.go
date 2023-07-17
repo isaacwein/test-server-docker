@@ -51,6 +51,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Request URL: %s\n\n", ToJsonI(r.URL))
 	fmt.Fprintf(w, "Remote URL: %s\n\n", r.RemoteAddr)
 	fmt.Fprintf(w, "Request URI: %s\n\n", r.RequestURI)
+	fmt.Fprintf(w, "Request Host: %s\n\n", r.Host)
 	fmt.Fprintf(w, "Request Method: %s\n\n", r.Method)
 	fmt.Fprintf(w, "Request Proto: %s\n\n", r.Proto)
 
