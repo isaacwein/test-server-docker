@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  test-server:
+    build:
+      context: .
+    ports:
+      - "8000:80"
+
